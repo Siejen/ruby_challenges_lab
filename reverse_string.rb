@@ -13,3 +13,18 @@
 #3. swap the second and second to last characters
 #4. continue until we are in the middle
 #5. take the array and transform into a string
+
+rev_array = []
+
+user_input = gets.chomp
+
+string = user_input
+array = string.split("")
+
+array.each do |letter|
+	rev_array.unshift(letter)
+end
+
+rev_string = rev_array.join("")
+
+puts rev_string
