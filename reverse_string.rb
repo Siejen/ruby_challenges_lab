@@ -16,11 +16,17 @@
 
 rev_array = []
 
+puts "Enter a string!"
+
 user_input = gets.chomp
 
 string = user_input
 array = string.split("")
 
+# push method, pushes each letter to the end of the array
+# unshift method, pushes each letter to the beginning of the array
+# In the below example, we are iterating over each letter (or element) in the array
+# Each letter is being unshifted added into the front of the empty "rev_array"
 array.each do |letter|
 	rev_array.unshift(letter)
 end
